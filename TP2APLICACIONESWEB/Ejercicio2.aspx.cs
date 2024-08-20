@@ -11,7 +11,30 @@ namespace TP2APLICACIONESWEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack == false)
+            {
+                ListItem ciudadUno = new ListItem();
+                ciudadUno.Text = "Gral. Pacheco";
+                ciudadUno.Value = "Zona norte";
+                ListItem ciudadDos = new ListItem();
+                ciudadDos.Text = "San Miguel";
+                ciudadDos.Value = "Zona Oeste";
+                ListItem ciudadTres = new ListItem();
+                ciudadTres.Text = "Boedo";
+                ciudadTres.Value = "Zona Sur";
+                ddlCiudades.Items.Add(ciudadUno);
+                ddlCiudades.Items.Add(ciudadDos);
+                ddlCiudades.Items.Add(ciudadTres);
+            }
         }
+
+        
+
+        protected void btnResumen_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Ejercicio2b.aspx");
+        }
+
+        
     }
 }
