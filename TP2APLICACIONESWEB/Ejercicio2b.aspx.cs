@@ -13,6 +13,8 @@ namespace TP2APLICACIONESWEB
         {
             if (!IsPostBack)
             {
+                lblMensaje.Text = "<h2>Resumen</h2>";
+
                 //Muestro Nombre y Apellido
                 String Nombre;
                 String Apellido;
@@ -20,24 +22,24 @@ namespace TP2APLICACIONESWEB
                 Nombre = Request["txtNombre"].ToString();
                 Apellido = ((TextBox)PreviousPage.FindControl("txtApellido")).Text;
 
-                lblMensaje.Text = "Nombre: " + Nombre + "<br/><br/>" +
-                                  "Apellido: " + Apellido + "<br/><br/>";
+                lblMensaje.Text += "<p><strong>Nombre:</strong> " + Nombre + "</p>";
+                lblMensaje.Text += "<p><strong>Apellido:</strong> " + Apellido + "</p>";
 
                 //Muestro la zona
                 DropDownList ciudades = (DropDownList)PreviousPage.FindControl("ddlCiudades");
-                string zona = "Zona: " + ciudades.SelectedValue + "<br/><br/>";
+                string zona = "<p><strong>Zona:</strong> " + ciudades.SelectedValue + "</p>";
 
                 lblMensaje.Text += zona;
 
                 //Muestro temas
                 CheckBoxList cblTemas = (CheckBoxList)PreviousPage.FindControl("cblTemas");
-                string temas = "Los temas elegidos son: <br/><br/>";
+                string temas = "<br><p>Los temas elegidos son: </p>";
 
                 foreach (ListItem item in cblTemas.Items)
                 {
                     if (item.Selected)
                     {
-                        temas += item.Text + "<br/>";
+                        temas += "<strong>" + item.Text + "</br></strong>"; ;
                     }
                 }
 

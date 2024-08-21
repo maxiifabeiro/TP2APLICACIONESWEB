@@ -14,26 +14,24 @@
             <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
             <br />
 &nbsp;<br />
-&nbsp;Apellido:&nbsp;&nbsp;
+&nbsp; Apellido:&nbsp;&nbsp;
             <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
             <br />
             <br />
-&nbsp;Ciudad:&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;Ciudad:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="ddlCiudades" runat="server">
             </asp:DropDownList>
             <br />
             <br />
-&nbsp;Temas:<br />
-            <asp:CheckBoxList ID="cblTemas" runat="server" style="margin-left: 75px">
+&nbsp; Temas:<br />
+            <asp:CheckBoxList ID="cblTemas" runat="server" style="margin-left: 75px" BorderStyle="None">
                 <asp:ListItem>Ciencias</asp:ListItem>
                 <asp:ListItem>Literatura</asp:ListItem>
                 <asp:ListItem>Historia</asp:ListItem>
             </asp:CheckBoxList>
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
-            <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnResumen" runat="server" OnClick="btnResumen_Click" Text="Ver resumen" />
+            <asp:Button ID="btnResumen" runat="server" OnClick="btnResumen_Click" Text="Ver resumen" style="margin-top: 0px" />
         </div>
     </form>
 </body>

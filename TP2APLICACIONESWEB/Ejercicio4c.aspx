@@ -12,7 +12,9 @@
         <div>
             <br />
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; USUARIO INVALIDO INGRESO NO PERMITIDO</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+        </div>
     </form>
 </body>
 </html>

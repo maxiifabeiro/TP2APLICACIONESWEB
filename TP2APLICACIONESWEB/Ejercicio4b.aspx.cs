@@ -16,7 +16,7 @@ namespace TP2APLICACIONESWEB
                 string usuario = Request.QueryString["usu"];
                 if (!string.IsNullOrEmpty(usuario))
                 {
-                    lblMensaje.Text = "Bienvenido a mi página Sr./a " + usuario;
+                    lblMensaje.Text = "<h2><strong>Bienvenido a mi página Sr./a " + usuario + "</h2></strong>";
                 }
             }
         }

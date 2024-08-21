@@ -11,7 +11,7 @@ namespace TP2APLICACIONESWEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblMensaje.Text = "<h2><strong>USUARIO INVALIDO INGRESO NO PERMITIDO</h2></strong>";
         }
     }
 }

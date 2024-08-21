@@ -21,8 +21,13 @@ namespace TP2APLICACIONESWEB
             int numeroUno = int.Parse(txtCantidad1.Text);
             int numeroDos = int.Parse(txtCantidad2.Text);
 
-            String tabla = "<table border='1'>";
-            tabla += "<tr><td;>Producto</td> <td>Cantidad</td></tr>";
+            string tabla = "<table border='1'>";
+
+            // Encabezado de la tabla
+            tabla += "<tr style=' font-weight: bold; color: black;'>";
+            tabla += "<td>Producto</td>";
+            tabla += "<td>Cantidad</td>";
+            tabla += "</tr>";
 
             // Fila para el primer producto
             tabla += "<tr>";
@@ -45,6 +50,7 @@ namespace TP2APLICACIONESWEB
             tabla += "</table>";
             lblTabla.Text = tabla;
         }
+
 
     }
 }
